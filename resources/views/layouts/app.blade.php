@@ -9,25 +9,18 @@
 
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-
-        .navbar-brand {
-            font-weight: 600;
-            font-size: 1.5rem;
+    
+        main {
+            flex: 1;
         }
-
-        footer {
-            background: #0d6efd;
-            color: white;
-            padding: 20px 0;
-            margin-top: 50px;
-        }
-    </style>
+    </style>    
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4 shadow-sm">
+    <nav style="background-color: #e5a13e;" class="navbar navbar-expand-lg navbar-dark mb-4 shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="{{ route('wisata.index') }}">Jelajah Indonesia</a>
     
@@ -53,10 +46,9 @@
         @yield('content')
     </div>
 
-    <footer class="text-center mt-5">
-        <p>&copy; {{ date('Y') }} Jelajah Indonesia. Semua hak dilindungi.</p>
+    <footer style="background-color: #e5a13e;" class="text-center text-white py-3 mt-auto">
+        <p>&copy; {{ date('Y') }} Jelajah Indonesia. By <a class="text-white" href = "google.com">Annafkh</a></p>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
